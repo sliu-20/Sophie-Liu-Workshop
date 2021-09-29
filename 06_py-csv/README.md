@@ -1,8 +1,10 @@
 Tigers: Sophie Liu, Qina Liu, Cameron Nelson
 K06 Reflection
 
+csv File reading and parsing: 
 - We accessed occupations.csv using open("occupations.csv). This returns a file object, which we can read using .read(). Using .split("\n"), we assigned each line of the file into an array index. We called this array "lines". 
 
+Dictionaries: 
 - Dictionaries have two values, a key and a value. Each value is assigned to a key, that can be accessed again. 
 To create a dictionary of the csv, we used a 2D array of jobs and percentages. The jobs were the keys, while the percentages became the values. By using the dict() constructor, python creates a dictionary with the necessary data. 
 
