@@ -1,6 +1,6 @@
-#Tigers: Sophie Liu, Qina Liu, Cameron Nelson
+## Tigers: Sophie Liu, Qina Liu, Cameron Nelson
 
-##K06 Reflection
+# K06 Reflection
 
 __csv File reading and parsing:__
 - We accessed occupations.csv using open("occupations.csv). This returns a file object, which we can read using .read(). Using .split("\n"), we assigned each line of the file into an array index. We called this array "lines". 
