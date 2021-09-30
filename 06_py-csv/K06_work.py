@@ -1,34 +1,32 @@
-## Sophie Liu
-## SoftDev
-## K06 -- StI/O: Divine your Destiny!
-## 2021-09-28
+# Tigers - Cameron Nelson, Sophie Liu, Qina Liu
+# SoftDev
+# K06 - Reading & Parsing CSV file 
+# 2021-09-28
 
 import random
 
-f = open("occupations.csv")
-lines = f.read().split("\n")
-
-split = []
+file = open("occupations.csv");
+lines = file.read().split("\n");
+del lines[0]; #Remove "Job Class, Percentage" line
+split = [];
 for i in lines:
-    comma = i.rsplit(",",1)
-    split.append(comma)
+    if "," in i:
+        #remove quotes, split string into job and %, then convert % to float
+        i = i.replace("\"","");
+        comma = i.rsplit(",",1);
+        comma[1] = float(comma[1]);
+        #add to necessary arrays
+        split.append(comma);
 
-# This removes the first and last lines, since "Percentage" isn't a number and
-# the 99.8 "Total" would completely skew the results. pop() needs to be run twice
-# because there also an empty array in there, probably due to an extra enter
-# in the csv file. 
-
-del split[0]
-split.pop()
-split.pop()
-
+del split[len(split)-1]; # Remove "Total" as a job
 dictionary = dict(split)
 
 # Another array is needed because the numbers are currently being stored as strings. 
 numbers = []
 
 for i in dictionary:
-    numbers.append(float(dictionary.get(i)))
+    numbers.append(dictionary.get(i));
 
 print(random.choices(list(dictionary), weights=numbers))
-
+#print(list(dictionary));
+#print(numbers);
