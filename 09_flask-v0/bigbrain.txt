@@ -1,0 +1,16 @@
+Sophie Liu, Cameron Nelson, Quacky, Bob
+Quacky-Bob Alliance
+SoftDev
+K09 -- Simple Path to Greatness
+2021-10-04
+
+Q0: I don't know enough about other code languages to answer this question. 
+Q1: It's used to mark folders in the terminal? Also, folders generally end with one. 
+Q2: It should print in the terminal it's run in. 
+Q3 (1st): Going by the name, it should print either the name of the computer or the name of the virtual environment the code is being run in. 
+Q3 (2nd): Probably not. This is just a returned string, so it won't appear unless print() is specifially run. Since print(hello_world) does not appear in the code, "No hablo queso!" will not appear. (Also it means "I don't speak cheese', so it probably doesn't really mean something good if it does show up)
+Q4: In Java, the double parenthesis is used when a method has no parameters to enter. 
+
+AFTER RUNNING CODE: 
+Q2: This did not print anywhere, oddly enough. Not sure if that's how it's supposed to go or it's just my computer. 
+Q3 (2nd): "No hablo queso" appeared after I put the IP address that showed up after I ran app.py in a browser window. 
