@@ -2,3 +2,28 @@ Variables in Jinja do not display if the variable is empty.
 CSS can be used to manipulate buttons. 
 If the user closes the window without logging out and without ending the flask session, the welcome page should appear for that username. 
 The session does not work without the secret key, even if it isn't used anywhere else. 
+
+NOTES FROM CODE DEMO: 
+The Best Laptop: 
+  Has an error message if both user and password are wrong. 
+  "Nice try Black Hat Hacker" if you attempt to go to the /auth page through the address bar. 
+  Method: GET
+  
+The Adjective Nouns: 
+  Has an error message if both user and password are wrong. 
+  Method: POST
+
+Three Coffee Peanuts: 
+  Checks username first, then password. 
+  Password box has dots instead of letters. 
+  Method: GET
+  request.method disappears after tab is closed (not stored). 
+
+Team Atom: 
+  Has a separate webpage for the error message. 
+   Method: POST
+
+Team Sleepy Programmers: 
+  Password box has dots instead of letters. 
+  Checks username first. 
+  <input type = "password">
