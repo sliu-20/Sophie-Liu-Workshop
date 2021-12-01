@@ -7,6 +7,34 @@
     <link rel="stylesheet" href="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.css">
   </head>
   <body>
+    <div class="top-bar">
+      <div class="top-bar-left">
+        <li>This is a navbar, or top-bar according to Foundation. </li>
+        <li>This is the left side. </li>
+        <li> This side is created using
+          <pre><code class="language-markup">&ltdiv class = "top-bar-left"&gt</code></pre>
+        </li>
+      </div>
+      <div class="top-bar-right">
+        <li>This is still the same navbar</li>
+        <li>This is the right side. </li>
+        <li> This side is created using
+          <pre><code class="language-markup">&ltdiv class = "top-bar-right"&gt</code></pre>
+        </li>
+      </div>
+    </div>
+    <p > The default color palette in foundation is:
+      <li style="color:#1779ba"> Primary </li>
+      <li style="color:#767676"> Secondary </li>
+      <li style="color:#3adb76"> Success </li>
+      <li style="color:#ffae00"> Warning </li>
+      <li style="color:#cc4b37"> Alert </li>
+      <li style="color:#fefefe"> White </li>
+      <li style="color:#e6e6e6"> Light Gray </li>
+      <li style="color:#cacaca"> Medium Gray </li>
+      <li style="color:#8a8a8a"> Dark Gray </li>
+      <li style="color:#0a0a0a"> Black </li>
+    </p>
     <h3> These are Buttons. There are many different classes of button.</h3>
     <p> This is an expanded button </p>
     <button type="button" class="expanded button" >expanded button!</button>
@@ -22,13 +50,13 @@
       <a class="button">of</a>
       <a class="button">Buttons!</a>
       <a class="success button">Row</a>
-      <a class="button">of</a>
+      <a class="warning button">of</a>
       <a class="alert button">Buttons!</a>
       <a class="button">Row</a>
       <a class="button">of</a>
       <a class="button">Buttons!</a>
     </div>
-    <p> The red and the green buttons are classified as an "alert button" and "success button", respectfully. </p>
+    <p> The green, yellow, and red buttons are classified as "success button", "alert button", and "warning button" respectfully. </p>
     <p> There are also multiple ways to create buttons. The expanded button is created using
       <pre>
         <code class="language-markup">&ltbutton type = "expanded button"&gt</code>
@@ -38,6 +66,38 @@
         <code class="language-markup">&lta class = "button"&gt</code>
       </pre>
       </p>
-
-  </body>
+      <div class="callout">
+        <p> This is a callout. The box resizes to fit the page, so adjust your window to see how it works. </p>
+        <p> The text always stays in the box, with roughly the same amount of space.</p>
+        <p> A callout is created using
+          <pre><code class="language-markup">&ltdiv class="callout"&gt</code></pre>
+        </p>
+      </div>
+      <div class="primary callout">
+        <p> A callout can be colored 5 different ways, all based off the color palette. </p>
+        <p> This is a primary callout.</p>
+        <p> Code:
+          <pre><code class="language-markup">&ltdiv class="primary callout"&gt</code></pre>
+        </p>
+      </div>
+      <div class="secondary callout small">
+        <p> The amount of space between the text and the box can also be manipulated. </p>
+        <p> This is a small secondary callout.</p>
+        <p> Code:
+          <pre> <code class="language-markup">&ltdiv class="secondary callout small"&gt</code></pre>
+        </p>
+      </div>
+      <div class="success callout large">
+        <p> This is a large success callout.</p>
+        <p> Code:
+          <pre> <code class="language-markup">&ltdiv class="success callout large"&gt</code></pre>
+        </p>
+      </div>
+      <div class="warning callout">
+        <p> This is a warning callout.</p>
+      </div>
+      <div class="alert callout">
+        <p> This is a alert callout.</p>
+      </div>
+    </body>
 </html>
