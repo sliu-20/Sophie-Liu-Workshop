@@ -1,0 +1,19 @@
+Sophie Liu
+SoftDev
+K24: Cold LAMPin v Flav
+2022-01-14
+
+DigitalOcean automatically logs you in as "root". Attempts to change the "Log in as..." name without any other changes to the droplet results in an error screen saying "All configured authentication methods failed"
+
+Had to use "apt-get update" before the droplet would let me install apache2
+
+apt install apache2
+
+ssh root@<IP ADDRESS>
+
+adduser <NEW USERNAME>
+needed to fill out a bunch of information, including a new password, Full Name [], Room Number [], Work Phone [], Home Phone [], and Other []. Unsure why these values are needed, but you can just hit ENTER to default it to something.
+
+you can then change the "Log in as..." to the new username.
+The new user does not have sudo privileges.
+"sliu20 is not in the sudoers file.  This incident will be reported." (reported to me I guess)
