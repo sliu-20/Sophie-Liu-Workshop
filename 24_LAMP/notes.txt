@@ -1,6 +1,6 @@
 Sophie Liu
 SoftDev
-K24: Cold LAMPin v Flav
+K24: Cold LAMPin w Flav
 2022-01-14
 
 DigitalOcean automatically logs you in as "root". Attempts to change the "Log in as..." name without any other changes to the droplet results in an error screen saying "All configured authentication methods failed"
