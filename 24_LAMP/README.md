@@ -19,6 +19,7 @@ and place it into the Authentication area.
 apt-get update
 ```
 so the droplet can install needed ubuntu updates.
+
 3. Finally, type
 ```
 apt install apache2
