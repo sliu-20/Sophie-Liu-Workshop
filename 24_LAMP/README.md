@@ -3,7 +3,7 @@
 ## Overview
 Guide to creating an ubuntu 20.04 virtual machine ("droplet") and installing Apache2 web server on it.
 
-### Estimated Time Cost: _
+### Estimated Time Cost: 30 min
 
 ### Prerequisites:
 
@@ -12,41 +12,20 @@ Guide to creating an ubuntu 20.04 virtual machine ("droplet") and installing Apa
 cat ~/.ssh/id_rsa.pub
 ```
 and place it into the Authentication area.
-- Something you will need installed beforehand...
 
-1. Step blah blah blah, and/or...
-1. Step, with `inline code`, and/or...
-1. Step, with
-    ```
-    generic code block or terminal command
-    ```
-   and/or...
-    ```python
-    print("this that Python tho")
-    ```
-   and/or...
-1. Step, with [hyperlink](https://xkcd.com)s...
+1. Start your droplet using the Access tab. You should automatically be signed in as the root user.
+2. After the window opens, type
+```
+apt-get update
+```
+so the droplet can install needed ubuntu updates.
+3. Finally, type
+```
+apt install apache2
+```
+to install apache2
 
-
-### Resources
-* https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mysql-php-lamp-stack-on-ubuntu-20-04
-* https://www.digitalocean.com/community/questions/error-permission-denied-publickey-when-i-try-to-ssh
-* https://www.digitalocean.com/community/questions/secure-ubuntu-server-for-non-root-user-using-only-ssh-keys?answer=22286
-* https://www.digitalocean.com/community/tutorials/how-to-create-a-new-sudo-enabled-user-on-ubuntu-18-04-quickstart
-* https://www.digitalocean.com/docs/droplets/how-to/
-* https://www.digitalocean.com/community/questions/error-permission-denied-publickey-when-i-try-to-ssh?answer=44730
-* https://www.digitalocean.com/docs/droplets/how-to/connect-with-ssh/putty/
-* https://www.digitalocean.com/docs/droplets/how-to/add-ssh-keys/create-with-openssh/
-* https://www.digitalocean.com/docs/droplets/how-to/connect-with-ssh/openssh/
-
-(please verify ; some of these are old links)
-
----
-
-Accurate as of (last update): 2022-01-14
+Accurate as of (last update): 2022-01-18
 
 #### Contributors:  
-Clyde "Thluffy" Sinclair  
-Topher Mykolyk, pd0  
-
-_Note: the two spaces after each name are important! ( <--burn after reading)  _
+Sophie Liu, pd2  
