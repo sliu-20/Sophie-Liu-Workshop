@@ -1,18 +1,18 @@
-Team Phantom Tollbooth :: Clyde Sinclair, Fierce Dragon
-SoftDev pd0
+Team (Liu)^2 :: Sophie Liu, Qina Liu
+SoftDev pd2
 K27 -- Basic functions in JavaScript
-2022-02-03r
+2022-02-04
 
 DISCO
 -----------------------------------------------------------------
-* Ooooh, ___
-* Aaah-haa!  ____...
+* no need to declare any types; so in fxn parameters it's (n), not (int n)
+* console.log() prints stuff to dev console
+*
 =================================================================
 
 QCC
 -----------------------------------------------------------------
-* Why...?
-* Huh?
-* Whuh now?
+* Why are there two ways to create functions?
+* Are there any differences in the result between the two function creation syntaxes?
+*
 =================================================================
-
