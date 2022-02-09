@@ -112,6 +112,15 @@ console.log(fib(5));
 
 // GCD
 let gcd = function(a, b) {
+  if (a < 0){
+    return gcd (a*-1, b);
+  }
+  if (b < 0){
+    return gcd (a, b*-1);
+  }
+  if (a == 0){
+    return b;
+  }
   if (a > b) {
     return gcd(b, a)
   }
@@ -123,3 +132,7 @@ let gcd = function(a, b) {
     return gcd(r, a);
   }
 }
+
+addItem("This is the factorial of 5: " + fact(5));
+addItem("This is th 7th fib number: " + fib(7));
+addItem("The GCD of 27 and 72 is: " + gcd(27, 72));
