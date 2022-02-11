@@ -132,7 +132,6 @@ let gcd = function(a, b) {
     return gcd(r, a);
   }
 }
-
 var r = document.getElementById('result');
 let fib_test = document.getElementById('fib');
 
@@ -153,6 +152,25 @@ let gcd_test = document.getElementById('GCD');
 let gcd_button = function(){
   let random1 = Math.floor(Math.random() * 101);
   let random2 = Math.floor(Math.random() * 101);
-  r.innerHTML = "The greatest common decimal between " + random1+ " and " + random2 + " is: " + gcd(random1,random2);
+  r.innerHTML = "The greatest common denominator between " + random1+ " and " + random2 + " is: " + gcd(random1,random2);
 };
 gcd_test.addEventListener('click', gcd_button);
+
+let try_test = document.getElementById('trying');
+let try_button = function() {
+  let a = document.createElement("div");
+  a.innerHTML = "hi?";
+  let rand = Math.floor(Math.random() * 3);
+  if (rand == 0) {
+    a.setAttribute('Class', "red");
+  }
+  else if (rand == 1) {
+    a.setAttribute('Class', "blue");
+  }
+  else {
+    a.setAttribute('Class', "green");
+  }
+  let b = document.getElementById("divTest");
+  b.appendChild(a);
+}
+try_test.addEventListener('click', try_button);
