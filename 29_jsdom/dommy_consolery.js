@@ -18,10 +18,10 @@
    (delete this block comment once you are done)
 */
 
-// Team Phantom Tollbooth :: Clyde Sinclair, Fierce Dragon
+// Team Phantom Tollbooth :: Sophie Liu, Rayat Roy
 // SoftDev pd0
-// K28 -- Getting more comfortable with the dev console and the DOM
-// 2022-02-08t
+// K29: DOMfoolery++
+// 2022-02-09
 // --------------------------------------------------
 
 
@@ -132,22 +132,27 @@ let gcd = function(a, b) {
     return gcd(r, a);
   }
 }
-let b1 = document.getElementById('b');
+
 var r = document.getElementById('result');
+let fib_test = document.getElementById('fib');
 
 let fib_button = function(){
-  r.innerHTML = fib(8);
+  let random = Math.floor(Math.random() * 21);
+  r.innerHTML = "Fibonacci number " + random + " is: " + fib(random);
 };
-b1.addEventListener('click', fib_button);
+fib_test.addEventListener('click', fib_button);
 
-let b2 = document.getElementById('b2');
+let fact_test = document.getElementById('fact');
 let fact_button = function(){
-  r.innerHTML = fact(4);
+  let random = Math.floor(Math.random() * 11);
+  r.innerHTML = random + " factorial is: " + fact(random);
 };
-b2.addEventListener('click', fact_button);
+fact_test.addEventListener('click', fact_button);
 
-let b3 = document.getElementById('b3');
+let gcd_test = document.getElementById('GCD');
 let gcd_button = function(){
-  r.innerHTML = gcd(27,72);
+  let random1 = Math.floor(Math.random() * 101);
+  let random2 = Math.floor(Math.random() * 101);
+  r.innerHTML = "The greatest common decimal between " + random1+ " and " + random2 + " is: " + gcd(random1,random2);
 };
-b3.addEventListener('click', gcd_button);
+gcd_test.addEventListener('click', gcd_button);
