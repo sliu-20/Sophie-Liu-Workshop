@@ -1,4 +1,4 @@
-// Team Splendid Slugs :: Sophie Liu, Roshani Shrestha
+// Team Electric Bread :: Sophie Liu, Roshani Shrestha
 // SoftDev pd2
 // K32 -- More Moving Parts
 // 2022-02-17r
